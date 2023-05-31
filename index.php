@@ -70,5 +70,99 @@
     // else {
     //    echo "You must be 18+ to enter" ;
     // }
+
+    // $adult = true;
+    // if($adult) {
+    //     echo "You my enter thsis site";
+    // }
+    // else {
+    //     echo "You must be an adult ton enter";
+    // }
+    //  $hours = 30;
+    //  $rate = 15;
+    //  $weekly_pay = null;
+
+    //     if($hours <= 0){
+    //            $weekly_pay = 0;
+    //     }
+    //     elseif($hours <= 40){
+    //            $weekly_pay = $hours * $rate;
+    //     }
+    //     else {
+    //        $weekly_pay = ($rate * 40) + (($hours -40) * ($rate * 1.5)) ; 
+    //     }
+
+    //     echo "You made \${$weekly_pay} this week ";
+
+
+
+    // logical operators = combine conditional statments
+    // if (condition1 && condition2)
+    // && = true of both conditions are true
+    // || = true if at least one condition is true
+    //  ! = true if false. false if true.
+
+    // $temp = 10;
+    // $cloudy = false;
+
+    // if($temp >= 0 && $temp <= 30) {
+    //     echo "The weather is good. <br>";
+    // }
+    // else {
+    //     echo "The weather is bad. <br>";
+    // }
+    // if(!$cloudy) {
+    //     echo "It's sunny";
+    // }
+    // else {
+    //     echo "It's cloudy";
+    // }
+
+    // $age = 25;
+    // $citizen = true;
+
+    // if(!$age >= 18 && !$citizen) {
+    //     echo "You cannot vote";
+    // }
+    // else{
+    //     echo"You can vote";
+    // }
+
+    // $child = true;
+    // $senior = false;
+    // $ticket = null;
+
+    // if($child || $senior) {
+    //     $ticket = 10;
+    // }
+    // else {
+    //     $ticket = 15;
+    // }
+    // echo "The ticket price is \${$ticket}";
+
+    /* Switch = replacement to using many elseif statements
+    more efficient, less code to write*/
+
+    $grade = "p";
+
+    if($grade == "A") {
+        echo "You did great";
+    }
+    elseif($grade == "B") {
+        echo "You did good";
+    }
+    elseif($grade == "C") {
+        echo "You did okay";
+    }
+    elseif($grade == "D") {
+        echo "You did pprly";
+    }
+    if($grade == "F") {
+        echo "You did failled";
+    }
+    else {
+        echo "{$grade} is not a valid grade";
+    }
 ?>
+
 
