@@ -8,13 +8,9 @@
 </head>
 <body>
    <form action="index.php" method="post">
-    <label>radius</label>
-    <input type="text" name="radius">
-    <!-- <label>y:</label>
-    <input type="text" name="y">
-    <label>z:</label>
-    <input type="text" name="z"> -->
-    <input type="submit" value="calculate">
+    <label>Enter à number to count to:</label>
+    <input type="text" name="counter">
+    <input type="submit" value="start">
    </form>
 </body>
 </html>
@@ -140,29 +136,106 @@
     // }
     // echo "The ticket price is \${$ticket}";
 
+
+
     /* Switch = replacement to using many elseif statements
     more efficient, less code to write*/
 
-    $grade = "p";
+    // $date = date("l");
+    // // $date = "pizza";
+    
+    // switch($date){
+    //     case "Monday";
+    //         echo "I hate Mondays";
+    //         break;
 
-    if($grade == "A") {
-        echo "You did great";
-    }
-    elseif($grade == "B") {
-        echo "You did good";
-    }
-    elseif($grade == "C") {
-        echo "You did okay";
-    }
-    elseif($grade == "D") {
-        echo "You did pprly";
-    }
-    if($grade == "F") {
-        echo "You did failled";
-    }
-    else {
-        echo "{$grade} is not a valid grade";
-    }
+    //      case "Tuesday";
+    //         echo "It is Taco Tuesday!";
+    //         break;
+
+    //     case "Wednesday";
+    //         echo "The work week is half over!";
+    //         break;
+
+    //     case "Thursday";
+    //         echo "It's almost the weekend!";
+    //         break;
+
+    //     case "Friday";
+    //         echo "The weekend is here!";
+    //         break;
+
+    //     case "Saturday";
+    //         echo "Time to party!";
+    //         break;
+
+    //     case "Sunday";
+    //         echo "Time to relax!";
+    //         break;
+
+    //     default:
+    //         echo "{$date} is not a day";
+
+        
+    // }
+
+
+    // $grade = "";
+
+    // switch($grade) {
+    //     case "A":
+    //         echo "You did great";
+    //         break;
+            
+    //     case "B":
+    //         echo "You did good";
+    //         break;
+
+    //     case "C":
+    //         echo "You did okay";
+    //         break;
+
+    //     case "D":
+    //         echo "You did poorly";
+    //         break;
+
+    //     case "F":
+    //         echo "You failled";
+    //         break;
+    //     default:
+    //         echo "{$grade} is not valid";
+
+    // }
+
+    // if($grade == "A") {
+    //     echo "You did great";
+    // }
+    // elseif($grade == "B") {
+    //     echo "You did good";
+    // }
+    // elseif($grade == "C") {
+    //     echo "You did okay";
+    // }
+    // elseif($grade == "D") {
+    //     echo "You did poorly";
+    // }
+    // elseif($grade == "F") {
+    //     echo "You did failled";
+    // }
+    // else {
+    //     echo "{$grade} is not a valid grade";
+    // }
+
+/* for loop = repeat some code à certain # of times */
+
+     $counter = $_POST["counter"];
+     
+     for ($i=$counter; $i > 0; $i++) { 
+        echo  $i ."<br>";
+     }
+
+     
+    
 ?>
 
 
